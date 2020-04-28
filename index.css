@@ -3,4 +3,5 @@ body {
     background-color: gray;
 }
 header {
-	text-align: center;
+	margin: 3px;
+}
