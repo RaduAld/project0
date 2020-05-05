@@ -2,56 +2,66 @@
 <html>
 <head>
     <title>Studies</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<style type="text/css">
-        	#mys {
-        		font-size: 50px;
-        	}
-        	#profilepht {
-        		width: 150px;
-        	}
-        	body{
-        		background-color: ;
-        		width: 100%;
-        	}
-        	nav-item {
-        		text-decoration: none;
-        		background-color: gray;
-        		margin: 5%;
-        	}
-        	nav {
-        		border-top: 3px solid #ff9900;
-        		border-bottom: 3px solid #ff9900;
-        	}
-        	article {
-        		margin:2%;
-        		width: 100%;
-        	}
-        	h3 {
-        		text-align: center;
-        		height: 100%;
-        	}
-        	.container {
-        		width: 100%;
-        	}
-        	.line {
-        		border: 3px solid #ff9900;
-        	}
-        	.nav-item {
-        		color: #ff9900;
-        		margin: 0.5%;
-        	}
-        	.nav-item:hover {
-        		background-color: #ff9900;
-        		color: white;
-        	}
-        	.std {
-        		border: 3px solid #ff9900;
-        		margin: 2px;
-        		padding: 10px;
-        		width: 50%;
-        	}
-        </style>
+    	#mys {
+    		font-size: 50px;
+    	}
+    	#profilepht {
+    		width: 150px;
+    	}
+    	body{
+    		background-color: #262626;
+    		width: 100%;
+    		color: white;
+    	}
+    	nav-item {
+    		text-decoration: none;
+    		background-color: gray;
+    		margin: 5%;
+    	}
+    	nav {
+    		border-top: 3px solid #ff9900;
+    		border-bottom: 3px solid #ff9900;
+    	}
+    	article {
+    		margin:2%;
+    		width: 100%;
+    	}
+    	h3 {
+    		text-align: center;
+    		height: 100%;
+    	}
+    	.img {
+    		width: 100%;
+    	}
+    	.container {
+		    display: flex;
+			flex-wrap: wrap;
+    	}
+    	.line {
+    		border: 3px solid #ff9900;
+    	}
+    	.nav-item {
+    		color: #ff9900;
+    		margin: 0.5%;
+    	}
+    	.nav-item:hover {
+    		background-color: #ff9900;
+    		color: white;
+    	}
+    	.std {
+    		margin: 2px;
+    		padding: 10px;
+    		width: 100%;
+    	}  
+    	@media (max-width: 499px) {
+            .img {
+                display: none;
+            }
+        }  
+    </style>
 </head>
 <body>
 	<div class="line"></div>
@@ -71,26 +81,23 @@
 		  <a class="nav-item nav-link" href="Hobbies.html">Hobbies</a>
 		  <a class="nav-item nav-link" href="City.html">My City</a>
 	</nav>
-	<div class="container">
-		  <div class="row mx-lg-n5">
-		    <h3 class="col std align-self-center">School</h3>
-		    <div class="col std"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<article class="container">
+		  <div class="row">
+		  	<div class="col std align-self-center">
+		    	<h3>School</h3>
+		    	<img src="https://img.freepik.com/free-vector/large-school-building-scene_1308-32058.jpg?size=626&ext=jpg" class="img">
+		    </div>
+		    <div class="col std align-self-center">From the 1<sup>st</sup> grade to the 5<sup>th</sup> I studied at Școala Centrală (Central School) where I had amaizing years along my frinds. Then I decided to change schools and I went to Liceul Teoretic Național (National Teoretical School). After 3 years I changed school again because I decided with my mother that it would be best to continue learning french at an advanced level, and Central School offered the best french teachers.</div>
 		  </div>
-		  <div class="row mx-lg-n5">
-		    <div class="col std"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-		    <h3 class="col std align-self-center">High School</h3>
+		  <div class="row">
+		    <div class="col std align-self-center">After finishing the 8<sup>th</sup> grade I had to take the National Exam which I passed with flying colors. Now I am in 9<sup>th</sup> grade and I am very happy that I was able to chose the mathematics bilingual profile and I am studying a lot of french in order to pass the Bacalaureat, Romania's exam for finishing high school, similar to the SAT's.</div>
+		    <div class="col std align-self-center">
+		    	<h3>High School</h3>
+		    	<img src="https://thumbs.dreamstime.com/b/high-school-building-vector-classic-flat-cartoon-illustration-isolated-140113670.jpg" class="img">
+		    </div>
 		  </div>
-	</div>
+	</article>
+
 	<div class="line"></div>
 </body>
 </html>
